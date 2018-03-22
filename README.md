@@ -13,16 +13,16 @@
 
 # Hackathon Use Cases
 
-## Data Exploration
+## Data Exploration (easy)
 
 [Link to DBC](https://raw.githubusercontent.com/BlueprintConsulting/dbhackathon/master/notebooks/Hackathon.dbc)
 
 
-## Recommendations
+## Recommendations (medium)
 
-[Link to DBC](https://raw.githubusercontent.com/BlueprintConsulting/dbhackathon/master/notebooks/Product%20Recommendations.scala)
+[Link to Notebook](https://raw.githubusercontent.com/BlueprintConsulting/dbhackathon/master/notebooks/Product%20Recommendations.scala)
 
 
-## Attribution Modelling
+## Attribution Modelling (hard)
 
 [Link to Notebook](https://raw.githubusercontent.com/BlueprintConsulting/dbhackathon/master/notebooks/Attribution%20Modelling.py).
