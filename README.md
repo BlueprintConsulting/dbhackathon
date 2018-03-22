@@ -20,7 +20,7 @@
 
 ## Recommendations
 
-[Link to DBC](https://raw.githubusercontent.com/BlueprintConsulting/dbhackathon/master/notebooks/Recommendation%20Lab.dbc)
+[Link to DBC](https://raw.githubusercontent.com/BlueprintConsulting/dbhackathon/master/notebooks/Product%20Recommendations.scala)
 
 
 ## Attribution Modelling
