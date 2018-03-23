@@ -81,9 +81,9 @@ import pyspark
 # MAGIC 
 # MAGIC Here is a description of the different datasets (and their paths in the Azure Blob account listed above):
 # MAGIC 
-# MAGIC * **Purchase History** `/attribution-modelling/data2/purchases` - a log of historical purchases by each user
-# MAGIC * **Marketing Touchpoint History** `/attribution-modelling/data2/events-*` - a log of historical marketing touchpoints by user (there are actually 3 of these tables, one for each of 3 marketing channels)
-# MAGIC * **ID Maps** `/attribution-modelling/data2/id-maps` - mapping of user id (from purchase history) to user uuid's found in the event tables (there is a mapping table for each of the 3 marketing channels)
+# MAGIC * **Purchase History (Parquet)** `/attribution-modelling/data2/purchases` - a log of historical purchases by each user
+# MAGIC * **Marketing Touchpoint History (Parquet)** `/attribution-modelling/data2/events-*` - a log of historical marketing touchpoints by user (there are actually 3 of these tables, one for each of 3 marketing channels)
+# MAGIC * **ID Maps (JSON)** `/attribution-modelling/data2/id-maps` - mapping of user id (from purchase history) to user uuid's found in the event tables (there is a mapping table for each of the 3 marketing channels)
 # MAGIC 
 # MAGIC ### Transforming the Data into something usable
 # MAGIC 
