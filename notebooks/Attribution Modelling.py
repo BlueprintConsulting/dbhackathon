@@ -77,6 +77,8 @@ import pyspark
 # MAGIC 
 # MAGIC There are multiple data sources that need to be integrated.  They can all be found in a public Azure Blob account located here: `wasbs://public@hackathonpublic.blob.core.windows.net`
 # MAGIC 
+# MAGIC [Connecting to Azure Data Sources](https://docs.azuredatabricks.net/spark/latest/data-sources/index.html)
+# MAGIC 
 # MAGIC Here is a description of the different datasets (and their paths in the Azure Blob account listed above):
 # MAGIC 
 # MAGIC * **Purchase History** `/attribution-modelling/data2/purchases` - a log of historical purchases by each user
@@ -91,6 +93,19 @@ import pyspark
 # MAGIC * `purchaseDate` - the date of this purchase
 # MAGIC * `customerJourney` - the marketing touchpoints that preceeded this purchase represented as an array (but be careful, many users have multiple purchases)
 # MAGIC * `purchaseAmount` - the total spent on this purchase
+
+# COMMAND ----------
+
+# Configure Spark to connect to an Azure Blob Storage Account
+spark.conf.set("fs.azure.account.key.hackathonpublic.blob.core.windows.net","obZL8SDLs39pjQ0xyO41uxVMqHkoAHmoSzmZUjB8HEEpg2DFGt0T00WGBbzmcK9rZU7vRwqbnZc2RrcNGGLmNg==")
+
+# Example of creating a Dataframe from Parquet and validating the filepath
+purchase_df = spark.read.parquet("wasbs://public@hackathonpublic.blob.core.windows.net/attribution-modelling/data2/purchases")
+dbutils.fs.ls("wasbs://public@hackathonpublic.blob.core.windows.net/attribution-modelling/data2/purchases")
+
+# YOUR CODE HERE
+
+# END OF YOUR CODE BLOCK
 
 # COMMAND ----------
 
